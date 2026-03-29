@@ -1,0 +1,11 @@
+fastapi==0.115.2
+uvicorn[standard]==0.30.6
+langgraph==0.2.39
+langchain-core==0.3.19
+pydantic==2.8.2
+pydantic-settings==2.4.0
+python-dotenv==1.0.1
+openai==1.43.0
+groq==0.11.0
+supabase==2.6.0
+
