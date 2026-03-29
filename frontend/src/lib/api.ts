@@ -1,4 +1,6 @@
-export const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8000";
+export const API_BASE_URL =
+  process.env.NEXT_PUBLIC_API_BASE_URL ||
+  "https://news-navigator-7q0k.onrender.com";
 
 export async function fetchBriefing() {
   const res = await fetch(`${API_BASE_URL}/briefing`);
@@ -21,4 +23,3 @@ export async function postQuery(persona: "cfo" | "investor", question: string) {
   if (!res.ok) throw new Error(`Failed to run query: ${res.status}`);
   return res.json();
 }
-
